@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import DarkModeButton from './DarkModeButton';
 
 const Portrait = () => {
   return (
-    <div>Portrait</div>
-  )
-}
+    <div className="flex flex-col mr-16">
+      Portrait
+      <DarkModeButton />
+    </div>
+  );
+};
 
-export default Portrait
+export default Portrait;
