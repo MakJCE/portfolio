@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @layer components {
-    .ease-transition{
-        @apply transition-all duration-200 ease-linear;
-    }
+  .ease-transition {
+    @apply transition-all duration-200 ease-linear;
+  }
+  .bg-circle {
+    @apply absolute w-[200px] h-[200px] bg-orange-500 mix-blend-normal dark:mix-blend-screen blur-[100px];
+  }
+}
+
+.radial-gradient-stroke {
+  background: linear-gradient(
+    105.87deg,
+    rgba(255, 255, 255, 0.4) 3.04%,
+    rgba(255, 255, 255, 0) 99.23%
+  );
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 300px;
 }
