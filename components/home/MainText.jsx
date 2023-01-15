@@ -10,25 +10,35 @@ const MainText = () => {
         Hi, I’m Jhonny
       </h1>
       <div className="flex flex-col gap-1">
-        <p className="text-center sm:text-left text-orange-900 dark:text-slate-50">Developer</p>
-        <p className="text-center sm:text-left text-orange-900 dark:text-slate-50">Frontend Oriented</p>
+        <p className="text-center sm:text-left text-orange-900 dark:text-slate-50">
+          Developer
+        </p>
+        <p className="text-center sm:text-left text-orange-900 dark:text-slate-50">
+          Frontend Oriented
+        </p>
       </div>
       <div className="flex gap-3 justify-center sm:justify-start">
-        <CVLogo
-          height="40px"
-          width="40px"
-          className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
-        />
-        <GitHubLogo
-          height="40px"
-          width="40px"
-          className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
-        />
-        <LinkedinLogo
-          height="40px"
-          width="40px"
-          className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
-        />
+        <a href="/CV_EN_2023.pdf" download>
+          <CVLogo
+            height="40px"
+            width="40px"
+            className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
+          />
+        </a>
+        <a href="https://github.com/MakJCE" target="_blank">
+          <GitHubLogo
+            height="40px"
+            width="40px"
+            className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/jhonnycamachoencinas/" target="_blank">
+          <LinkedinLogo
+            height="40px"
+            width="40px"
+            className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
+          />
+        </a>
       </div>
     </section>
   );

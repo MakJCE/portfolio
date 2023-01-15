@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: red;
+  background: #ff5e18;
+}
+
+::selection {
+  color: rgb(124 45 18);
+  background: rgb(253 186 116);
+}
+
 @layer components {
   .ease-transition {
     @apply transition-all duration-200 ease-linear;
   }
   .bg-circle {
     @apply absolute w-[200px] h-[200px] bg-orange-500 mix-blend-normal dark:mix-blend-screen blur-[100px];
+  }
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14
+      rounded-md shadow-md
+      text-orange-900 dark:text-white bg-orange-500/10
+      text-sm
+      transition-all duration-100 scale-0 origin-left;
   }
 }
 
@@ -21,4 +39,21 @@
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 300px;
+}
+
+.radial-gradient-bg {
+  background: linear-gradient(
+    105.87deg,
+    rgba(255, 255, 255, 0.4) 3.04%,
+    rgba(255, 255, 255, 0) 99.23%
+  );
+  backdrop-filter: blur(40px);
+}
+.radial-gradient-bg-hover {
+  background: linear-gradient(
+    105.87deg,
+    rgba(255, 255, 255, 0.4) 13.04%,
+    rgba(255, 255, 255, 0) 99.23%
+  );
+  backdrop-filter: blur(80px);
 }
