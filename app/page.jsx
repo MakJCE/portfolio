@@ -12,7 +12,7 @@ const HomePage = () => {
     <section className={font.className}>
       <div className="flex justify-center gap-12 sm:gap-52 mt-14 flex-wrap">
         <MainText />
-        <Portrait/>
+        <Portrait large/>
       </div>
     </section>
   );
