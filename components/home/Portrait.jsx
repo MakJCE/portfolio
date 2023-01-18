@@ -1,10 +1,18 @@
+'use client';
+
 import React from 'react';
 import DarkModeButton from './DarkModeButton';
+import { motion } from 'framer-motion';
 
 const Portrait = ({ large = false }) => {
   const dimensions = large ? 'w-60 h-60' : 'w-32 h-32';
   return (
-    <div className={`flex flex-col items-center gap-2`}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ ease: 'easeOut', duration: 0.5 }}
+      className={`flex flex-col items-center gap-2`}
+    >
       <div className={`relative ${dimensions} rounded-full peer`}>
         <div
           className={`absolute ${dimensions} radial-gradient-stroke border-2 border-solid border-orange-500/10 dark:border-orange-500/[.40]`}
@@ -14,7 +22,7 @@ const Portrait = ({ large = false }) => {
         ></div>
       </div>
       <DarkModeButton />
-    </div>
+    </motion.div>
   );
 };
 

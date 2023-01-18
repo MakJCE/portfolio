@@ -11,12 +11,10 @@ export default function RootLayout({ children }) {
           <div className="w-1/6 z-10">
             <SideBar />
           </div>
-          <div className="w-5/6 pl-7">
-            <div className="bg-circle right-12 top-0 animate-circles-10"></div>
-            <div className="bg-circle left-0 top-[-30px] animate-circles-40"></div>
-            <div className="bg-circle left-[35vw] bottom-[50px] animate-circles-25"></div>
-            {children}
-          </div>
+          <div className="bg-circle right-12 top-0 animate-circles-10"></div>
+          <div className="bg-circle left-0 top-[-30px] animate-circles-40"></div>
+          <div className="bg-circle left-[35vw] bottom-[50px] animate-circles-25 "></div>
+          <div className="w-5/6 pl-7 z-10">{children}</div>
         </div>
       </body>
     </html>
