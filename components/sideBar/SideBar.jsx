@@ -9,7 +9,7 @@ const font = Average_Sans({ weight: ['400'] });
 const SideBar = () => {
   return (
     <nav className={font.className}>
-      <ul className="flex flex-col gap-10 text-sm items-center">
+      <ul className="fixed h-screen w-24 flex flex-col gap-10 text-sm items-center">
         {routes.map((route) => (
           <li
             className="text-center text-clip"
