@@ -12,11 +12,6 @@ const SkillsList = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ type: 'spring', stiffness: 600, damping: 20 }}
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.3 }
-            }}
             className="w-full flex items-center mb-2"
           >
             <div className="w-1/5">{skills.name}</div>
@@ -30,11 +25,6 @@ const SkillsList = () => {
                     className="w-full flex items-center mb-2"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                    whileHover={{
-                      scale: 1.1,
-                      transition: { duration: 0.3 }
-                    }}
                   >
                     <div className="w-1/5 pl-6">{lib.name}</div>
                     <LevelBar level={lib.skillLevel} />

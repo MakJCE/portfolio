@@ -2,7 +2,7 @@ const listOfCourses = [
   {
     year: 2017,
     title: 'Bachelor of humanities',
-    description: 'Colegio Don Bosco',
+    description: 'Institution: Colegio Don Bosco',
     source: ''
   },
   {
