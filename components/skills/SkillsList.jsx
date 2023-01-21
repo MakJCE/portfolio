@@ -3,6 +3,7 @@
 import React from 'react';
 import listOfSkills from './listOfSkills';
 import { motion } from 'framer-motion';
+import LevelBar from './LevelBar';
 
 const SkillsList = () => {
   return (
@@ -26,7 +27,7 @@ const SkillsList = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                   >
-                    <div className="w-1/5 pl-6">{lib.name}</div>
+                    <div className="w-1/5">&nbsp;&nbsp;&nbsp;{lib.name}</div>
                     <LevelBar level={lib.skillLevel} />
                   </motion.div>
                 </li>
@@ -40,13 +41,3 @@ const SkillsList = () => {
 };
 
 export default SkillsList;
-
-const LevelBar = ({ level }) => {
-  return level === 25 ? (
-    <div className="w-1/5 h-2 bg-orange-800/40 dark:bg-white/50 rounded-full transition"></div>
-  ) : level === 50 ? (
-    <div className="w-2/5 h-2 bg-orange-800/40 dark:bg-white/50 rounded-full transition"></div>
-  ) : (
-    <div className="w-3/5 h-2 bg-orange-800/40 dark:bg-white/50 rounded-full transition"></div>
-  );
-};
