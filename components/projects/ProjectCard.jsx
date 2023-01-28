@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
       <p className="text-stone-600 dark:text-white text-xs">
         {project.description}
       </p>
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
         <div className="flex justify-start text-orange-900 dark:text-white">
           {project.stack.map((dep) => (
             <div title={dep.label} key={`${project.name}-${dep.label}`}>
@@ -34,7 +34,7 @@ const ProjectCard = ({ project }) => {
           <a
             target="_blank"
             href={project.source}
-            class="inline-flex items-center px-2 py-1 text-sm font-medium text-orange-900/60 bg-white/70 border border-gray-200 rounded-lg hover:bg-white hover:text-orange-900 focus:z-10 focus:ring-2 focus:outline-none focus:ring-orange-700/30 focus:text-orange-900 dark:bg-gray-800 dark:text-orange-200 dark:border-gray-600 dark:hover:text-orange-200 dark:hover:bg-gray-700 dark:focus:ring-orange-200/20 transition"
+            className="inline-flex items-center px-2 py-1 text-sm font-medium text-orange-900/60 bg-white/70 border border-gray-200 rounded-lg hover:bg-white hover:text-orange-900 focus:z-10 focus:ring-2 focus:outline-none focus:ring-orange-700/30 focus:text-orange-900 dark:bg-gray-800 dark:text-orange-200 dark:border-gray-600 dark:hover:text-orange-200 dark:hover:bg-gray-700 dark:focus:ring-orange-200/20 transition"
           >
             View <ArrowLogo />
           </a>

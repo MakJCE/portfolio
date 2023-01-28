@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className="dark:bg-stone-900 bg-stone-100 text-zinc-900 dark:text-slate-50">
         <div className="flex w-screen pt-20 flex-wrap">
-          <div className="w-1/6 z-10">
+          <div className="w-1/6 z-20">
             <SideBar />
           </div>
           <div className="bg-circle right-12 top-0 animate-circles-10"></div>

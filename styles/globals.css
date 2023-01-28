@@ -73,8 +73,8 @@
 }
 
 .card {
-  width: 258px;
-  height: 150px;
+  max-width: 258px;
+  min-height: 150px;
   backdrop-filter: blur(13px) saturate(174%);
   -webkit-backdrop-filter: blur(13px) saturate(174%);
   border-radius: 12px;

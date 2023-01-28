@@ -15,7 +15,7 @@ const SkillsList = () => {
             animate={{ opacity: 1, x: 0 }}
             className="w-full flex items-center mb-2"
           >
-            <div className="w-1/5">{skills.name}</div>
+            <div className="w-4/5 sm:w-1/5">{skills.name}</div>
             <LevelBar level={skills.skillLevel} />
           </motion.div>
           {skills.libraries && (
@@ -27,7 +27,7 @@ const SkillsList = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                   >
-                    <div className="w-1/5">&nbsp;&nbsp;&nbsp;{lib.name}</div>
+                    <div className="w-4/5 sm:w-1/5">&nbsp;&nbsp;&nbsp;{lib.name}</div>
                     <LevelBar level={lib.skillLevel} />
                   </motion.div>
                 </li>

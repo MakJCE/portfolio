@@ -24,7 +24,7 @@ const EducationElement = ({ course }) => {
         <a
           target="_blank"
           href={course.source}
-          class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 dark:text-orange-200 bg-white/70 border border-gray-200 rounded-lg hover:bg-white hover:text-orange-900 focus:z-10 focus:ring-2 focus:outline-none focus:ring-orange-700/30 focus:text-orange-900 dark:bg-gray-800 dark:border-gray-600 dark:hover:text-orange-200 dark:hover:bg-gray-700 dark:focus:ring-orange-200/20 transition"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 dark:text-orange-200 bg-white/70 border border-gray-200 rounded-lg hover:bg-white hover:text-orange-900 focus:z-10 focus:ring-2 focus:outline-none focus:ring-orange-700/30 focus:text-orange-900 dark:bg-gray-800 dark:border-gray-600 dark:hover:text-orange-200 dark:hover:bg-gray-700 dark:focus:ring-orange-200/20 transition"
         >
           View more <ArrowLogo />
         </a>
