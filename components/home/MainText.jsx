@@ -25,14 +25,18 @@ const MainText = () => {
             className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
           />
         </a>
-        <a href="https://github.com/MakJCE" target="_blank">
+        <a href="https://github.com/MakJCE" target="_blank" rel="noreferrer">
           <GitHubLogo
             height="40px"
             width="40px"
             className="text-orange-700/30 hover:text-orange-700 dark:text-slate-50/30 dark:hover:text-slate-50 transition cursor-pointer hover:translate-y-1"
           />
         </a>
-        <a href="https://www.linkedin.com/in/jhonnycamachoencinas/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/jhonnycamachoencinas/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedinLogo
             height="40px"
             width="40px"

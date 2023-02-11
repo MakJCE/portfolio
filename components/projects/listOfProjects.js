@@ -1,6 +1,9 @@
 import JavaScriptLogo from '../Logos/JavaScriptLogo';
 import CssLogo from '../Logos/CssLogo';
 import HtmlLogo from '../Logos/HtmlLogo';
+import ReactLogo from '../Logos/ReactLogo';
+import NextLogo from '../Logos/NextjsLogo';
+import TailwindLogo from '../Logos/TailwindLogo';
 
 const listOfProjects = [
   {
@@ -17,12 +20,16 @@ const listOfProjects = [
     ],
     source: 'https://makjce.github.io/othello-web/index.html'
   },
-  // {
-  //   name: 'dos',
-  //   description: '',
-  //   stack: [{ label: '', icon: '' }],
-  //   source: ''
-  // },
+  {
+    name: 'My Portfolio',
+    description: 'This website, where I demonstrate my skills, experience and dedication.',
+    stack: [
+      { label: 'React', icon: <ReactLogo height="25px" width="30px" /> },
+      { label: 'Next Js', icon: <NextLogo height="25px" width="30px" /> },
+      { label: 'Tailwind', icon: <TailwindLogo height="30px" width="30px" /> },
+    ],
+    source: ''
+  },
   // {
   //   name: 'tres',
   //   description: '',
